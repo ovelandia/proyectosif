@@ -1,5 +1,5 @@
 <?php
-//Definiendo seguridad de conexion
+//Definiendo seguridad de conexion//
 session_start();
 if($_SESSION["estado"]!="1")
 {
