@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>SIF</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body class="loading">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Bienvenidos a SIF</h1>
+						<p>Sistema de Informacion el "Florero"</p>
+						<nav>
+							<ul>
+								<form>
+									<li><span class="label"><input type="button" value="Ingreso" onclick="location.href='ingreso.html'"></span></li>
+									<li><span class="label"><input type="button" value="Ingreso" onclick="location.href='ingreso.html'"></span></li>
+																	
+								</form>
+
+							</ul>
+							<ul>
+								<li><span class="label"><input type="button" value="Visitante" onclick="location.href='Contenido/principal.html'"></span></li>
+							</ul>
+						</nav>
+					</header>
+			</div>
+		</div>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script>
+			window.onload = function() { document.body.className = ''; }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+	</body>
+</html>

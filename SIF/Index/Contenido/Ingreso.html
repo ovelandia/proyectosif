@@ -1,0 +1,59 @@
+
+
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<title>SIF</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body class="loading">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Bienvenidos a SIF</h1>
+						<p>Sistema de Informacion el "Florero"</p>
+						<nav>
+							<script> 
+								function revisar() { 
+								if(formulario.doc == "doc") { alert('completa este campo') ; return false ; } 
+								if(formulario.pas == "pas") { alert('completa este campo') ; return false ; } 
+								 
+								} 
+								</script>
+							<form action="ev_sesion.php"  name="formulario" method="POST"  onsubmit="return revisar()">
+								<p>Documento:</p>
+								<input name="documento" type="text" autocomplete="off" name="doc" id="documento" required><br>
+								<p>Contraseña:</p>
+								<input name="password" type="password" autocomplete="off" name="pas" id="password" required><br>
+								 <br>
+								<input type="submit" name="Submit" value="LOGIN">
+
+							
+									
+							</form>
+							
+							
+						</nav>
+					</header>
+			</div>
+		</div>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script>
+			window.onload = function() { document.body.className = ''; }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+	</body>
+</html>
+
+
