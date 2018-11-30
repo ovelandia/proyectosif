@@ -1,4 +1,6 @@
 <?php
+
+//Definiendo variable de conexion
 $db = new mysqli('localhost', 'root', '', 'sifv2');
 $acentos = $db->query("SET NAMES 'utf8'");
 
