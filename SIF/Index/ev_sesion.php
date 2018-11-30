@@ -8,7 +8,7 @@ class Login
 	  $cont=0;
 	  $username= $_POST['documento'];	
 	  $password= $_POST['password'];	
-	  //Consulta de la DB
+	  //Consulta de la DB--
 	  
 	  include('conexion.php');
 	  $sql = "SELECT * FROM empleado WHERE documento = '$username' AND password = '$password'";
